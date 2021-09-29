@@ -1,1 +1,0 @@
-## Uma Interface Web para o suporte de sistemas de recomendação
