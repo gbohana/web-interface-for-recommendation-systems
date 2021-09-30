@@ -6,7 +6,7 @@ const axios = require('axios')
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "bonovoxlima"
+    password: ""
   });
   
   con.connect(function(err) {
