@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import "./styles.css";
+import "./styles.css";
 import axios from "axios";
 
 function Login() {
@@ -43,13 +43,19 @@ function Login() {
 
   return (
     <div className="form">
-        <p>ACESSO AO SISTEMA</p>
+        <h1>ACESSO AO SISTEMA</h1>
         <label>Usuário:</label>
-        <input onChange={e => setUsername(e.target.value)} label="Usuário"/>
+        <div>
+          <input onChange={e => setUsername(e.target.value)} label="Usuário"/>
+        </div>
         <label>Senha:</label>
-        <input onChange={e => setPassword(e.target.value)} label="Senha" />
-        <button onClick={() => onLogin()}>ENTRAR</button>
-        <button onClick={() => onSubmit()}>NOVO USUÁRIO</button>
+        <div>
+          <input onChange={e => setPassword(e.target.value)} label="Senha" />
+        </div>
+        <div className="buttons">
+          <button onClick={() => onLogin()}>ENTRAR</button>
+          <button onClick={() => onSubmit()}>NOVO USUÁRIO</button>
+        </div>
     </div>
   );
 }
